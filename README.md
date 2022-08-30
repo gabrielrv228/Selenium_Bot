@@ -51,7 +51,7 @@ time.sleep(1)
 
 browser.find_element_by_css_selector('#form-captcha input.btn.btn-main').click()
 ```
-- 6. Here, in the last screen there is a aids us to click the element directly instead, we have to click the part of the screen where the element is displayed.
+- 6. Here, in the last screen there is a protection  system taht avoids us to click the element directly instead, we have to click the part of the screen where the element is displayed.
  We scroll and wait: 
 ```
 browser.execute_script("window.scrollTo(0,document.body.scrollHeight)")
@@ -70,5 +70,16 @@ a = browser.find_element_by_css_selector('#btn-main')
 act.move_to_element(a)
 act.click(a)
 act.perform()
+browser.execute_script("window.stop();")
+```
+- And finally we move tab and close the browser.
+```
+
+act.key_down(Keys.CONTROL).key_down(Keys.TAB).key_up(Keys.TAB).key_up(Keys.CONTROL).perform()
+time.sleep(1)
 
 
+
+time.sleep(2)
+browser.quit()
+```
