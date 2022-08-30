@@ -18,7 +18,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 ```
 And here comes the program:
-- 1
-
+- At first we will define how often is going the script to perform the task
+```
+schedule.every(1).minutes.do(job) 
+```
 
 
