@@ -77,9 +77,6 @@ browser.execute_script("window.stop();")
 
 act.key_down(Keys.CONTROL).key_down(Keys.TAB).key_up(Keys.TAB).key_up(Keys.CONTROL).perform()
 time.sleep(1)
-
-
-
 time.sleep(2)
 browser.quit()
 ```
