@@ -1,5 +1,5 @@
 # Selenium Web Driver Bot
-## This is a Program coded in Python making use of Selenium,  it was intended to pass automatically the advertisements of the URL shorter "ouo.io". 
+## This is a Program coded in Python making use of Selenium. It was intended to pass automatically the advertisements of the URL shorter "ouo.io". 
 
 This company pays a small amount for every user that passes the multiple ads clicking in determined parts of the webpage. They have implemented diverse measures for avoiding bots to pass the adversitments automatically and here I will explain how you can pass all the measures exceptuating the Google captcha. 
 
